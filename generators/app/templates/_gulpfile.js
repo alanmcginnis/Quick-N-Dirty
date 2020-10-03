@@ -13,6 +13,7 @@ const webpackConfig	= require('./webpack.config.js');
 
 const watchPaths = {
 	scss: 'css/**/*.scss',
+	html: '**.html',
 	js: ['./js/**/*.js', '!./js/**/*.min.js','!./js/**/*.min.js.map'],
 };
 
@@ -112,7 +113,7 @@ function startBrowserSync() {
 
 	browsersync.init(bsConfig.browserSync);
 
-	watch(bsConfig.watch, (cb) => {
+	watch([watchPaths.scss, watchPaths.html].concat(watchPaths.js), (cb) => {
 		browsersync.reload();
 		cb();
 	});
