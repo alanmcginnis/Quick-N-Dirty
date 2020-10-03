@@ -1,35 +1,52 @@
-# generator-codepen [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Local Codepen
+# Quick 'N' Dirty
+
+> A Yeoman generator to quickly hash out design ideas.
+
+Includes
+1. Normalize CSS
+2. jQuery
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-codepen using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+1. (Optional) First, install [Yeoman](http://yeoman.io) using [npm](https://www.npmjs.com/) (assuming you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
 ```
 
-Then generate your new project:
+2. Clone this repo to a folder of your choice on your computer. `cd` into the newly cloned repository and run the following commands.
+
+```bash
+npm i && npm link && rm -rf .git
+```
+
+### Notes on Installation
+
+Running `npm link` will allow you to use the yeoman generator on your machine as if it were a package from Yeoman.
+
+I have you remove the `.git` folder because you will most likely be making modifications to suit your own needs. Feel free to add your own remote and store a personlized copy in your own Github account.
+
+## Usage
+
+Make sure you run the following command in an empty directory.
+
+```bash
+mkdir empty-directory && cd empty-directory
+```
+
+### oh-my-zsh users
+```zsh
+take empty-directory
+```
+
+### Run the thing
 
 ```bash
 yo qnd
 ```
 
-## Getting To Know Yeoman
-
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+Then run `npm start` and enjoy! 🥤
 
 ## License
 
-GPL-3.0 © [Alan McGinnis](https://alanmcginnis.com)
-
-
-[npm-image]: https://badge.fury.io/js/generator-codepen.svg
-[npm-url]: https://npmjs.org/package/generator-codepen
-[travis-image]: https://travis-ci.com/alanmcginnis/generator-codepen.svg?branch=master
-[travis-url]: https://travis-ci.com/alanmcginnis/generator-codepen
-[daviddm-image]: https://david-dm.org/alanmcginnis/generator-codepen.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/alanmcginnis/generator-codepen
+AGPL-3.0 © [Alan McGinnis](alanmcginnis.com)

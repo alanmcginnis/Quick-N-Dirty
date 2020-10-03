@@ -8,7 +8,7 @@
 		"build-css": "npx gulp build_scss",
 		"build-js": "npx gulp build_js",
 		"build": "npx gulp build",
-		"watch": "npx gulp",
+		"start": "npx gulp",
 		"analyze-js": "npx webpack --profile --json > webpack-bundle-stats.json && npx webpack-bundle-analyzer webpack-bundle-stats.json dist/js"
   },
   "keywords": [],
