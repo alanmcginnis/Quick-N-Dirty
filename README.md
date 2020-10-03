@@ -7,13 +7,12 @@ First, install [Yeoman](http://yeoman.io) and generator-codepen using [npm](http
 
 ```bash
 npm install -g yo
-npm install -g generator-codepen
 ```
 
 Then generate your new project:
 
 ```bash
-yo codepen
+yo qnd
 ```
 
 ## Getting To Know Yeoman
