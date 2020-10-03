@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Alan McGinnis",
+      "authorEmail": "alan.mcginnis@gravitatedesign.com",
+      "authorUrl": "https://alanmcginnis.com"
+    }
+  }
+}

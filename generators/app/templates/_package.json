@@ -1,0 +1,55 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "npx eslint js/**/*.js",
+		"build-css": "npx gulp build_scss",
+		"build-js": "npx gulp build_js",
+		"build": "npx gulp build",
+		"watch": "npx gulp",
+		"analyze-js": "npx webpack --profile --json > webpack-bundle-stats.json && npx webpack-bundle-analyzer webpack-bundle-stats.json dist/js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+		"@babel/core": "^7.8.3",
+		"@babel/plugin-proposal-class-properties": "^7.8.3",
+		"@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+		"@babel/plugin-syntax-dynamic-import": "^7.8.3",
+		"@babel/preset-env": "^7.8.3",
+		"babel-loader": "^8.1.0",
+		"browser-sync": "^2.26.7",
+		"caniuse-lite": "^1.0.30001023",
+		"eslint": "^6.8.0",
+		"eslint-config-airbnb-base": "^14.1.0",
+		"eslint-plugin-import": "^2.20.0",
+		"gulp": "^4.0.0",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-exec": "^4.0.0",
+		"gulp-load-plugins": "^2.0.2",
+		"gulp-notify": "^3.2.0",
+		"gulp-plumber": "^1.2.0",
+		"gulp-rename": "^2.0.0",
+		"gulp-sass": "^4.1.0",
+		"gulp-sourcemaps": "^2.6.5",
+		"hard-source-webpack-plugin": "^0.13.0",
+		"node-sass": "^4.13.1",
+		"webpack": "^4.41.5",
+		"webpack-bundle-analyzer": "^3.7.0",
+		"webpack-cli": "^3.3.11",
+		"webpack-stream": "^5.1.1"
+	},
+	"bundlerOptions": {
+		"babel": true
+	},
+	"browserslist": [
+		"last 2 versions",
+		"IE >= 11",
+		"not IE <= 10",
+		"not ie_mob <= 10"
+	]
+}

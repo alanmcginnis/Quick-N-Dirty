@@ -1,0 +1,7 @@
+{
+	"browserSync": {
+		"server": "./",
+		"open": true,
+		"notify": true
+	}
+}
